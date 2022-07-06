@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Dosis', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--bs-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0064c6;
+}
+
+/*header*/
+
+.header-item{
+    color: #adff2f;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    transition: 0.5s;
+  }
+.scroll-down{
+    transform: translate3d(0, -100% ,0) !important;
+  }
+  
+  .scroll-up{
+    background-color: #000000db !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+
+/*home*/
+.home{
+    background-image: url("../img/lalo-hernandez-Amo081zdJsI-unsplash.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.home::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00000020;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-item{
+    z-index: 10;
+}
+
+.p-home{
+    padding: 10px 25px !important;
+}
+.home-divider{
+    width: 1px;
+    height: 44px;
+    background-color: #ffffff80;
+}
+.b-home{
+    background-color: #ffffff80;
+    backdrop-filter: blur(1px);
+}
+
+/*services*/
+.services{
+    /*background-img: url("../img/bora.jpg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    position: relative;
+    background-color: #F1FAFF;
+
+}
+
+
+.services-card, .services-btn{
+    z-index: 1000;
+    text-align: center;
+}
+
+.services-item{
+    background-color: #EBF0FE;
+    margin: 10px auto;
+}
+
+/*recommended*/
+.recommended{
+    background-image: url("../img/010.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.recommended::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000060;
+
+}
+.recommended-header, .recommended-btn{
+    position: relative;
+    z-index: 100;
+}
+.recommended-title{
+    transition: 0.5s;
+}
+.recommended-title:hover{
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+}
+.recommended-item{
+    background-image: url("../img/bg_dot.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+.recommended-item-two{
+    background-image: url("../img/bg_dot.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+.round{
+    border-radius: 5px;
+}
+
+/*gallery*/
+.gallery{
+
+    background-image: url("../img/lalo-hernandez-Amo081zdJsI-unsplash.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.gallery::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.78);
+}
+.gallery-item{
+    position: relative;
+    z-index: 10;
+    column-count: 3;
+    column-gap: 1.25rem;
+    column-width: 300px;
+}
+.gallery-img{
+    margin-bottom: 1.25rem;
+    width: 100%;
+
+}
+/*blog*/
+.blog{
+    background-color: #F1FAFF;
+}
+.blog-xlbig{
+}
+.blog-big{
+    width: 100%;
+    height: 325px;
+    background-image: url("../img/lalo-hernandez-Amo081zdJsI-unsplash.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.blog-item{
+    z-index: 10;
+}
+.blog-lbig{
+    
+    width: 100%;
+    height: 100%;
+    background-color: #00000020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+}
+.blog-lbig::after{
+    content: '';
+    /* width: 100%;
+    height: 100%;
+    background-color: #00000020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px; */
+
+}
+.blog-big-two{
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/singapore.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.blog-big-two::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00000020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.blog-big-three{
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/bora.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.blog-big-three::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00000020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+/*.card-img, .card-img-top {*/
+/*    border-radius: 5px !important;*/
+/*}*/
+
+@media screen and (max-width: 992px){
+    .nav-item{
+        margin-top: 5px!important;
+        padding: 0 5px!important;
+        border-radius: 0.25rem;
+        background-color: #ffffff80 !important;
+        backdrop-filter: blur(1px) !important;
+        transition: 0.5s !important;
+    }
+    .nav-item:hover{
+        background-color: #ffffff !important;
+    }
+    .nav-link{
+        color: #0a53be !important;
+    }
+
+}
+
+@media screen and (max-width: 580px){
+
+    .nav-item{
+        margin-top: 5px!important;
+        padding: 0 5px!important;
+        border-radius: 0.25rem;
+        background-color: #ffffff80 !important;
+        backdrop-filter: blur(1px) !important;
+        transition: 0.5s!important;
+    }
+    .nav-item:hover{
+        background-color: #ffffff !important;
+    }
+    .nav-link{
+        color: #0a53be !important;
+    }
+
+}
+
